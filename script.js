@@ -88,7 +88,7 @@
          else if (scorePlayer < scoreComputer) {
             console.log("Computer was the winner!");
          }
-         else {
+         else if (scorePlayer == scoreComputer) {
             console.log("We have a tie!");
          }
     }
