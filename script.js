@@ -37,15 +37,15 @@ function playRound(playerSelection) {
     }
     else if (playerSelection == computerSelection) {
         result = ('It\'s a tie. You both chose ' + playerSelection
-            + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+            + "<br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
     }//if computer wins display this message
     else {
         computerScore += 1
         result = ('You lose! ' + computerSelection + ' beats ' + playerSelection
-            + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+            + "<br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
         //if computer wins the game display this message
         if (computerScore == 5) {
-            result += '<br><br>I won the game! Reload the page to play again'
+            result += '<br><br>You Lost the game! Reload the page to play again'
             disableButtons()
         }
     }
